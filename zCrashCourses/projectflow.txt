@@ -36,6 +36,15 @@
     add code to entity.artifact_entity.py file till DataIngestionArtifact class >>
     add code to components.data_ingestion.py file >> add code to training pipeline >> 
     run demo.py (set mongodb connection url first, see next step)
+
+              ----workflow--- for each component
+                * constant
+                * config_entity 
+                * artifact_entity
+                * component
+                * pipeline
+                * app.py / demo.py
+
 18. To setup the connection url on mac(also work for windows), open bash/powershell terminal and run below command:
                         *** For Bash ***
     set: export MONGODB_URL="mongodb+srv://<username>:<password>......"
@@ -52,13 +61,6 @@
     Also add "artifact" dir to .gitignore file
 
 
-                ----workflow--- for each component
-                * constant
-                * config_entity 
-                * artifact_entity
-                * component
-                * pipeline
-                * app.py / demo.py
 
 ---------------------------- Data Validation, Data Transformation & Model Trainer ----------------------------
 

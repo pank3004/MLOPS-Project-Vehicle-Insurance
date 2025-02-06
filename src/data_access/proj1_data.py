@@ -37,6 +37,7 @@ class Proj1Data:
         pd.DataFrame
             DataFrame containing the collection data, with '_id' column removed and 'na' values replaced with NaN.
         """
+        
         try:
             # Access specified collection from the default or specified database
             if database_name is None:
