@@ -91,6 +91,13 @@
          >> Check env var from powershell terminal: <<
          echo $env:AWS_ACCESS_KEY_ID
          echo $env:AWS_SECRET_ACCESS_KEY
+
+        >> Set env var from cmd terminal: <<
+        set AWS_ACCESS_KEY_ID=AWS_ACCESS_KEY_ID
+        set AWS_SECRET_ACCESS_KEY=AWS_SECRET_ACCESS_KEY
+        >> Check env var from cmd terminal: <<
+        echo %AWS_ACCESS_KEY_ID%
+        echo %AWS_SECRET_ACCESS_KEY%
       ====================================================================================
       * Now add the access key, secret key, region name to constants.__init__.py
       * Add code to src.configuration.aws_connection.py file (To work with AWS S3 service)
