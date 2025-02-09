@@ -123,6 +123,8 @@ class SimpleStorageService:
         Returns:
             object: The deserialized model object.
         """
+        logging.info("Entered load_model method from S3 bucket.")
+
         try:
             model_file = model_dir + "/" + model_name if model_dir else model_name
             file_object = self.get_file_object(model_file, bucket_name)
