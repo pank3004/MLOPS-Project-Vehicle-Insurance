@@ -142,6 +142,9 @@
       sudo sh get-docker.sh
       sudo usermod -aG docker ubuntu
       newgrp docker
+                    sudo service docker start
+                    sudo chkconfig docker on (if this not works check below)
+                    sudo systemctl enable docker 
 
 29. Next step is to connect Github with EC2(Self hosted runner):
       * select your project on Github >> go to settings >> Actions >> Runner >> New self hosted runner
